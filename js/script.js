@@ -121,8 +121,19 @@ function init() {
                 `)
                 .style("left", (event.pageX + 10) + "px")
                 .style("top", (event.pageY - 20) + "px");
+        
+            d3.select(event.target)
+                .attr("stroke", "black")
+                .attr("stroke-width", 2)
+                .attr("opacity", 1);
         })
-        .on("mouseout", () => tooltip.style("display", "none"))
+        .on("mouseout", (event, d) => {
+            tooltip.style("display", "none");
+        
+            d3.select(event.target)
+                .attr("stroke", "none")
+                .attr("opacity", 0.7);
+        })
         .transition().duration(500)
         .attr("r", d => Math.max(sizeScale(d[sizeVar]), 3));
 }
