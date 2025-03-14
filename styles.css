@@ -1,0 +1,72 @@
+* {
+    font-family: Arial, sans-serif;
+    max-width: 800px;
+    margin: 0 auto;
+    line-height: 1.8;
+}
+
+.container {
+    max-width: 800px;
+    margin: 2rem auto;
+}
+
+#vis svg {
+    margin: 2rem 0;
+    border: 1px solid #ccc;
+}
+
+label {
+    font-weight: bold;
+}
+
+select {
+    padding: 5px;
+    font-size: 14px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    margin: 5px;
+    cursor: pointer;
+}
+
+#legend {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-top: 10px;
+    padding: 5px;
+    width: 400px;
+}
+
+.legend-item {
+    display: flex;
+    align-items: center;
+    font-size: 14px;
+}
+
+.legend-color {
+    width: 12px;
+    height: 12px;
+    display: inline-block;
+    margin-right: 5px;
+    border: 1px solid #333;
+}
+
+#tooltip {
+    position: absolute;
+    padding: 10px;
+    background: white;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    pointer-events: none;
+    font-size: 12px;
+}
+
+.x-axis text,
+.y-axis text {
+    font-size: 12px;
+}
+
+.axis-label {
+    font-size: 14px;
+    font-weight: bold;
+}
