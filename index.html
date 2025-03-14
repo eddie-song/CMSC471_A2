@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CMSC471 A2 Edward Song</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+    <div id="tooltip" style="display:none"></div>
+    <h2>The Effects of Temperature on Precipitation</h2>
+    <h2>CMSC471 A2 Edward Song</h2>
+
+    <div id="info"></div>
+
+    <label for="stationSelect">Station:</label>
+    <select id="stationSelect"></select>
+    <br>
+    <label for="xSelect">X-Axis:</label>
+    <select id="xSelect" class="variable"></select>
+
+    <label for="ySelect">Y-Axis:</label>
+    <select id="ySelect" class="variable"></select>
+
+    <label for="sizeSelect">Size:</label>
+    <select id="sizeSelect" class="variable"></select>
+
+    <label for="seasonSelect">Filter by:</label>
+    <select id="seasonSelect" class="seasonSelect"></select>
+
+    <div id="legend">
+        <div class="legend-item"><span class="legend-color" style="background: blue;"></span>Winter</div>
+        <div class="legend-item"><span class="legend-color" style="background: green;"></span>Spring</div>
+        <div class="legend-item"><span class="legend-color" style="background: red;"></span>Summer</div>
+        <div class="legend-item"><span class="legend-color" style="background: orange;"></span>Autumn</div>
+    </div>
+
+    <div id="vis"></div>
+
+    <script src="https://d3js.org/d3.v7.min.js"></script>
+    <script src="js/script.js"></script>
+</body>
+
+</html>
